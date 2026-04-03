@@ -1,0 +1,14 @@
+{
+  "name": "arbihunt-monorepo",
+  "version": "1.0.0",
+  "description": "Fullstack Crypto Arbitrage App",
+  "scripts": {
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "start:server": "npm run dev --prefix server",
+    "start:client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run start:server\" \"npm run start:client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
